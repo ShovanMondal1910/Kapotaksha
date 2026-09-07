@@ -1,0 +1,625 @@
+/* ══════════════════════════════════════════════════════════════════════════
+   Campus & Facilities Page Styling
+   Kapotaksha High School (KHS)
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* ── Hero Banner ────────────────────────────────────────────────────────── */
+.facilities-hero {
+    position: relative;
+    padding: 100px 20px 80px;
+    background: linear-gradient(135deg, #09203f 0%, #1a4d8c 50%, #0a2d59 100%);
+    color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.facilities-hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: #f8fbff;
+    clip-path: polygon(0 100%, 100% 100%, 100% 0);
+}
+
+.facilities-hero-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #ffd166;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 6px 18px;
+    border-radius: 30px;
+    margin-bottom: 18px;
+}
+
+.facilities-hero-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: -0.5px;
+}
+
+.facilities-hero-desc {
+    font-size: 1.1rem;
+    max-width: 720px;
+    margin: 0 auto 28px;
+    color: #e2e8f0;
+    line-height: 1.7;
+}
+
+.facilities-quick-stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.quick-stat-pill {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 24px;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.quick-stat-pill strong {
+    color: #ffd166;
+    font-size: 1.05rem;
+}
+
+/* ── 3D Campus Viewer Section ────────────────────────────────────────────── */
+.campus-3d-section {
+    padding: 50px 20px 80px;
+    background: #f8fbff;
+}
+
+.viewer-outer-card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 16px 45px rgba(15, 32, 39, 0.09);
+    border: 1px solid #ddecfa;
+    overflow: hidden;
+    position: relative;
+}
+
+.viewer-header-bar {
+    padding: 18px 24px;
+    background: #0f2027;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    border-bottom: 1px solid #203a43;
+}
+
+.viewer-title-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.viewer-status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #00e676;
+    box-shadow: 0 0 10px #00e676;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.95); opacity: 0.8; }
+    50% { transform: scale(1.15); opacity: 1; }
+    100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+.viewer-heading {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.viewer-badge-3d {
+    background: linear-gradient(135deg, #1e88e5, #1565c0);
+    color: #ffffff;
+    font-size: 0.72rem;
+    font-weight: 800;
+    padding: 3px 10px;
+    border-radius: 12px;
+    letter-spacing: 1px;
+}
+
+/* Viewer Controls Strip */
+.viewer-controls-strip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.btn-3d-ctrl {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 0.82rem;
+    padding: 6px 13px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+}
+
+.btn-3d-ctrl:hover {
+    background: rgba(255, 255, 255, 0.24);
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.btn-3d-ctrl.active {
+    background: #1e88e5;
+    border-color: #1e88e5;
+    color: #ffffff;
+}
+
+/* 3D Canvas Viewport */
+.campus-canvas-container {
+    position: relative;
+    width: 100%;
+    height: 560px;
+    background: linear-gradient(180deg, #bfe3fc 0%, #e0f2fe 70%, #d8edf8 100%);
+    overflow: hidden;
+}
+
+.campus-canvas-container.night-mode {
+    background: linear-gradient(180deg, #091220 0%, #102138 70%, #132742 100%);
+}
+
+#campus-3d-canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: grab;
+}
+
+#campus-3d-canvas:active {
+    cursor: grabbing;
+}
+
+/* Floating HUD Controls */
+.viewer-floating-hud {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.hud-preset-pill {
+    pointer-events: auto;
+    background: rgba(15, 32, 39, 0.85);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hud-preset-pill:hover,
+.hud-preset-pill.active {
+    background: #1e88e5;
+    color: #ffffff;
+    transform: translateX(4px);
+}
+
+.viewer-floating-instructions {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    background: rgba(15, 32, 39, 0.8);
+    backdrop-filter: blur(8px);
+    color: #cbd5e1;
+    font-size: 0.78rem;
+    padding: 6px 14px;
+    border-radius: 8px;
+    z-index: 10;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Hotspot Info Drawer/Overlay */
+.hotspot-info-card {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    width: 320px;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.25);
+    border: 1px solid #ddecfa;
+    z-index: 20;
+    overflow: hidden;
+    display: none;
+    animation: slideUp 0.3s ease forwards;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hotspot-info-card.active {
+    display: block;
+}
+
+.hotspot-img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.hotspot-body {
+    padding: 16px;
+}
+
+.hotspot-title {
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: #0f2027;
+    margin-bottom: 4px;
+}
+
+.hotspot-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1e88e5;
+    background: #e3f2fd;
+    padding: 2px 8px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.hotspot-text {
+    font-size: 0.85rem;
+    color: #475569;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.hotspot-close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    border: none;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.hotspot-close-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* ── Facilities Showcase Section ─────────────────────────────────────────── */
+.facilities-catalog-section {
+    padding: 80px 20px;
+    background: #ffffff;
+}
+
+.catalog-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.catalog-label {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #1e88e5;
+    background: rgba(30, 136, 229, 0.08);
+    padding: 4px 14px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+.catalog-title {
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: #0f2027;
+    margin-bottom: 12px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.catalog-desc {
+    color: #64748b;
+    max-width: 650px;
+    margin: 0 auto;
+    font-size: 1rem;
+}
+
+/* Filter Buttons */
+.facility-filters-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.facility-filter-btn {
+    border: 1px solid #cce0f5;
+    background: #f8fbff;
+    color: #1e293b;
+    font-size: 0.88rem;
+    font-weight: 600;
+    padding: 9px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.facility-filter-btn:hover {
+    background: #e3f2fd;
+    border-color: #90caf9;
+    color: #1565c0;
+}
+
+.facility-filter-btn.active {
+    background: #1e88e5;
+    border-color: #1e88e5;
+    color: #ffffff;
+    box-shadow: 0 4px 14px rgba(30, 136, 229, 0.28);
+}
+
+/* Facility Grid & Cards */
+.facility-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+    position: relative;
+}
+
+.facility-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 36px rgba(15, 32, 39, 0.12);
+    border-color: #90caf9;
+}
+
+.facility-card-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    background: #e2e8f0;
+}
+
+.facility-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.facility-card:hover .facility-card-img {
+    transform: scale(1.06);
+}
+
+.facility-card-badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: rgba(15, 32, 39, 0.8);
+    backdrop-filter: blur(6px);
+    color: #ffffff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.facility-card-body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.facility-card-title {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #0f2027;
+    margin-bottom: 10px;
+    line-height: 1.3;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.facility-card-text {
+    font-size: 0.92rem;
+    color: #475569;
+    line-height: 1.7;
+    margin-bottom: 16px;
+    flex-grow: 1;
+}
+
+.facility-feature-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 18px;
+}
+
+.feature-tag {
+    background: #f1f5f9;
+    color: #334155;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 3px 9px;
+    border-radius: 6px;
+}
+
+.facility-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 14px;
+    border-top: 1px solid #f1f5f9;
+}
+
+.facility-location-tag {
+    font-size: 0.8rem;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-locate-3d {
+    background: #e3f2fd;
+    color: #1565c0;
+    border: none;
+    font-size: 0.82rem;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.btn-locate-3d:hover {
+    background: #1e88e5;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(30, 136, 229, 0.25);
+}
+
+/* ── Campus Map & Safety Guidelines Section ──────────────────────────────── */
+.campus-info-section {
+    padding: 70px 20px;
+    background: #f8fbff;
+}
+
+.campus-feature-box {
+    background: #ffffff;
+    border: 1px solid #ddecfa;
+    border-radius: 16px;
+    padding: 32px 26px;
+    height: 100%;
+    box-shadow: 0 6px 20px rgba(15, 32, 39, 0.05);
+}
+
+.campus-feature-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: #e3f2fd;
+    color: #1e88e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.campus-feature-title {
+    font-size: 1.18rem;
+    font-weight: 800;
+    color: #0f2027;
+    margin-bottom: 10px;
+}
+
+.campus-feature-text {
+    font-size: 0.92rem;
+    color: #475569;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ── Responsive ──────────────────────────────────────────────────────────── */
+@media (max-width: 992px) {
+    .campus-canvas-container {
+        height: 460px;
+    }
+    .facilities-hero-title {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .facilities-hero {
+        padding: 70px 15px 50px;
+    }
+    .facilities-hero-title {
+        font-size: 1.9rem;
+    }
+    .campus-canvas-container {
+        height: 380px;
+    }
+    .viewer-header-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .viewer-controls-strip {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .viewer-floating-hud {
+        display: none;
+    }
+    .hotspot-info-card {
+        width: calc(100% - 32px);
+        left: 16px;
+        right: 16px;
+    }
+}

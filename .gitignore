@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+.npm/
+
+# Logs & Runtime
+*.log
+npm-debug.log*
+
+# OS and Editor artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+.vscode/
+.idea/
+
+# Executables and Binaries
+*.exe
+
+# Local Environment
+.env
+.env.local
+

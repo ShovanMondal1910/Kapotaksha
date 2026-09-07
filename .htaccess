@@ -1,0 +1,103 @@
+# ==============================================================================
+# Kapotaksha High School (KHS) — Comprehensive Web Security & Hardening Rules
+# Compatible with Apache 2.4+ and LiteSpeed Web Server
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. DISABLE DIRECTORY BROWSING (Information Disclosure Defense)
+# Prevents attackers from viewing directory contents when index file is absent
+# ------------------------------------------------------------------------------
+Options -Indexes -MultiViews
+
+# ------------------------------------------------------------------------------
+# 2. FORCE SECURE HTTPS CONNECTION
+# ------------------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTPS} !=on
+    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# 3. BLOCK ACCESS TO SENSITIVE SYSTEM & CONFIGURATION FILES
+# Prevents unauthorized access to git, configs, packages, scripts, and logs
+# ------------------------------------------------------------------------------
+<FilesMatch "(^\.|\.(json|lock|md|log|env|bak|sh|sql|config|yml|yaml|ini))$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# Explicitly block scripts directory from public web execution
+<IfModule mod_rewrite.c>
+    RewriteRule ^scripts/.*$ - [F,L]
+    RewriteRule ^templates/.*$ - [F,L]
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# 4. HTTP SECURITY HEADERS (OWASP & Industry Best Practices)
+# ------------------------------------------------------------------------------
+<IfModule mod_headers.c>
+    # Content Security Policy (CSP): Mitigate XSS, malicious injections, and unauthorized framing
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; frame-src 'self' https://www.google.com https://maps.google.com; object-src 'none'; base-uri 'self'; form-action 'self' mailto:; upgrade-insecure-requests;"
+
+    # Clickjacking Defense: Restrict framing to same origin
+    Header always set X-Frame-Options "SAMEORIGIN"
+
+    # MIME-Type Sniffing Defense: Force browser to adhere to declared content types
+    Header always set X-Content-Type-Options "nosniff"
+
+    # Referrer Policy: Restrict sensitive referrer data leakage
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # Permissions Policy: Disable invasive device sensors (camera, mic, geolocation, payments)
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=(), vr=(), accelerometer=()"
+
+    # HTTP Strict Transport Security (HSTS): Enforce HTTPS for 1 year including subdomains
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+    # Cross-Origin Policies: Isolate browsing contexts
+    Header always set Cross-Origin-Opener-Policy "same-origin"
+    Header always set Cross-Origin-Resource-Policy "same-origin"
+
+    # Disable Server Signature Header
+    Header unset X-Powered-By
+    Header unset Server
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# 5. BLOCK COMMON EXPLOIT ATTEMPTS (XSS, SQLi, Path Traversal)
+# ------------------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Block path traversal attempts (../ or /..)
+    RewriteCond %{QUERY_STRING} (?:^|&|;)file=(?:\.\./|\.\.\\) [NC,OR]
+    RewriteCond %{THE_REQUEST} (?:^| )/[^?]*(?:\.\./|\.\.\\) [NC,OR]
+
+    # Block script tag injection in query parameters
+    RewriteCond %{QUERY_STRING} (<|%3C).*script.*(>|%3E) [NC,OR]
+
+    # Block base64 encoded injection attempts
+    RewriteCond %{QUERY_STRING} base64_(en|de)code[^(]*\([^)]*\) [NC,OR]
+
+    # Block attempts to modify global variables
+    RewriteCond %{QUERY_STRING} (GLOBALS|REQUEST)(_\[|\.\[|\[|%5B) [NC,OR]
+
+    # Block common SQL injection keywords in queries
+    RewriteCond %{QUERY_STRING} (union.*select|concat.*\(|select.*from) [NC]
+    RewriteRule ^.*$ - [F,L]
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# 6. RESTRICT REQUEST METHODS
+# Only allow GET, POST, and HEAD methods
+# ------------------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+    RewriteCond %{REQUEST_METHOD} !^(GET|POST|HEAD)$ [NC]
+    RewriteRule ^.*$ - [F,L]
+</IfModule>

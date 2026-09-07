@@ -1,0 +1,50 @@
+/**
+ * Kapotaksha High School (KHS) - Design Tokens & Variables
+ * Standardized design system variables for consistent cross-site styling.
+ */
+
+:root {
+  /* Brand Colors */
+  --khs-primary: #002147;
+  --khs-primary-dark: #001630;
+  --khs-primary-light: #1a3d6d;
+  --khs-accent: #ffc107;
+  --khs-accent-hover: #e0a800;
+  --khs-accent-yellow: #f5f500;
+  --khs-brand-blue: #1a72b8;
+  --khs-brand-blue-hover: #1565c0;
+  --khs-brand-blue-active: #0d47a1;
+
+  /* Neutral & UI Colors */
+  --khs-bg-white: #ffffff;
+  --khs-bg-light: #f8f9fa;
+  --khs-bg-card: #ffffff;
+  --khs-text-main: #212529;
+  --khs-text-muted: #6c757d;
+  --khs-text-light: #e0e0e0;
+  --khs-border-color: #dee2e6;
+  --khs-border-light: rgba(0, 0, 0, 0.08);
+
+  /* Typography */
+  --khs-font-serif: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  --khs-font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* Layout & Spacing */
+  --khs-navbar-height: 72px;
+  --khs-max-width: 1320px;
+  --khs-radius-sm: 4px;
+  --khs-radius-md: 8px;
+  --khs-radius-lg: 16px;
+  --khs-radius-pill: 50px;
+
+  /* Elevation & Shadows */
+  --khs-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.06);
+  --khs-shadow-md: 0 4px 14px rgba(0, 0, 0, 0.10);
+  --khs-shadow-lg: 0 10px 28px rgba(0, 0, 0, 0.15);
+  --khs-shadow-hover: 0 12px 30px rgba(0, 0, 0, 0.18);
+
+  /* Transitions */
+  --khs-transition-fast: 0.15s ease;
+  --khs-transition: 0.3s ease;
+  --khs-transition-slow: 0.5s ease;
+}

@@ -1,0 +1,85 @@
+/* ── Site-Wide Bilingual Language Switcher Styles ─────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap');
+
+/* Bengali typography when active */
+[lang="bn"],
+[data-current-lang="bn"] {
+    font-family: 'Hind Siliguri', 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif !important;
+}
+
+[lang="bn"] .custom-navbar .nav-link,
+[lang="bn"] .custom-navbar .dropdown-item {
+    font-family: 'Hind Siliguri', 'Segoe UI', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+/* Language Toggle Container in Navbar */
+.lang-switch-wrapper {
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-lang-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    color: #ffffff;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    user-select: none;
+    backdrop-filter: blur(4px);
+    line-height: 1.2;
+}
+
+.btn-lang-toggle:hover {
+    background: rgba(255, 255, 255, 0.22);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+}
+
+.lang-globe {
+    font-size: 14px;
+    display: inline-block;
+}
+
+.lang-opt {
+    transition: all 0.2s ease;
+    opacity: 0.65;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.lang-opt.active {
+    opacity: 1;
+    color: #ffffff;
+    font-weight: 700;
+    background: #1e88e5;
+    box-shadow: 0 2px 6px rgba(30, 136, 229, 0.4);
+}
+
+.lang-divider {
+    opacity: 0.4;
+    font-size: 11px;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 991px) {
+    .lang-switch-wrapper {
+        margin: 8px auto 4px auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-lang-toggle {
+        padding: 6px 16px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "kapotaksha-high-school-portal",
+  "version": "1.0.0",
+  "description": "Official bilingual web portal and digital campus for Kapotaksha High School (KHS)",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx -y live-server --port=3000 --entry-file=index.html --wait=200",
+    "start": "npx -y serve .",
+    "check:links": "node scripts/check-links.js",
+    "check:security": "node scripts/security-audit.js",
+    "audit": "npm run check:links && npm run check:security"
+  },
+  "keywords": [
+    "school",
+    "portal",
+    "education",
+    "threejs",
+    "i18n",
+    "bangladesh"
+  ],
+  "author": "Kapotaksha High School Dev Team",
+  "license": "MIT"
+}
