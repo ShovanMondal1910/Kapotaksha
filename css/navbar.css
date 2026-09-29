@@ -135,6 +135,25 @@ html, body, * {
     background: #1565c0;
 }
 
+.custom-navbar .btn-login {
+    background: transparent;
+    border: 2px solid #f5f500;
+    color: #f5f500;
+    border-radius: 20px;
+    padding: 5px 18px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-navbar .btn-login:hover {
+    background: #f5f500;
+    color: #151b1e;
+    transform: translateY(-1px);
+}
+
 .custom-navbar .navbar-toggler {
     border-color: rgba(29, 125, 177, 0.4);
 }
