@@ -9,7 +9,7 @@ function getAllHtmlFiles(dir, fileList = []) {
   const files = fs.readdirSync(dir);
   for (const file of files) {
     const fullPath = path.join(dir, file);
-    if (['node_modules', '.git', 'dist'].includes(file)) continue;
+    if (['node_modules', '.git', 'dist', 'components'].includes(file)) continue;
     const stat = fs.statSync(fullPath);
     if (stat.isDirectory()) {
       getAllHtmlFiles(fullPath, fileList);

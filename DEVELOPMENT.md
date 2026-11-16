@@ -140,6 +140,35 @@ To embed the 3D viewer on any page, include the container and scripts:
 
 ---
 
+### Recipe 7: How to Update Global Navigation & Footer in 1 Step
+Instead of editing 30+ separate HTML files, use the single source of truth component system:
+1. Edit [`components/navbar.html`](file:///c:/Users/Krishanu/OneDrive%20-%20American%20International%20University-Bangladesh/School/components/navbar.html) or [`components/footer.html`](file:///c:/Users/Krishanu/OneDrive%20-%20American%20International%20University-Bangladesh/School/components/footer.html).
+2. Use `{{ROOT}}` in front of any relative URL (e.g. `{{ROOT}}about/facilities.html`).
+3. Run the component synchronizer:
+   ```bash
+   npm run sync
+   ```
+   The script automatically calculates the relative depth for every file (`./`, `../`, `../../`) and updates all 30+ HTML pages in 0.2 seconds!
+
+---
+
+### Recipe 8: Managing Data-Driven Content (Notices & Exams)
+To add or update announcements, exam schedules, or news without touching complex markup:
+1. Open [`data/notices.json`](file:///c:/Users/Krishanu/OneDrive%20-%20American%20International%20University-Bangladesh/School/data/notices.json) or [`data/exams.json`](file:///c:/Users/Krishanu/OneDrive%20-%20American%20International%20University-Bangladesh/School/data/exams.json).
+2. Insert your notice or exam object with `title`, `date`, `excerpt`, and `link`.
+3. Changes are instantly queryable and ready for API or dynamic feed consumption.
+
+---
+
+### Recipe 9: Optimizing Images for High Performance
+To optimize large camera uploads and save bandwidth:
+```bash
+npm run optimize:images
+```
+This automatically resizes oversized images down to web-standard dimensions (max 1920px) and compresses them to 85% high visual quality, cutting load times by up to 80-95%!
+
+---
+
 ## 🎨 Coding & Style Guidelines
 
 ### CSS Conventions

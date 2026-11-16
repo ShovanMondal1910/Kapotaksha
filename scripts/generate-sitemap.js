@@ -5,7 +5,7 @@ const root = path.resolve(__dirname, '..');
 function getAllHtml(dir, list = []) {
   fs.readdirSync(dir).forEach(file => {
     const full = path.join(dir, file);
-    if (['node_modules', '.git', 'scripts', 'templates'].includes(file)) return;
+    if (['node_modules', '.git', 'scripts', 'templates', 'components'].includes(file)) return;
     if (fs.statSync(full).isDirectory()) {
       getAllHtml(full, list);
     } else if (file.endsWith('.html')) {

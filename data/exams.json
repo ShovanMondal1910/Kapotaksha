@@ -1,0 +1,118 @@
+[
+  {
+    "id": "annual-exam-2026",
+    "title": "Annual Exam Schedule | 2026",
+    "school": "Kapotaksha High School, Koyra, Khulna",
+    "publishedDate": "2026-11-16",
+    "startDate": "2026-11-19",
+    "endDate": "2026-12-06",
+    "startTime": "10:00 AM",
+    "classes": ["Class 6", "Class 7", "Class 8", "Class 9"],
+    "instructions": [
+      "All subject examinations will be conducted for the full allocated duration and full marks.",
+      "The Multiple Choice Question (MCQ) examination will take place first, immediately followed by the Creative/Theoretical examination without any break in between.",
+      "Examinees are strictly prohibited from using or bringing any electronic devices other than an analog wristwatch into the examination hall.",
+      "Only examinees of Class 8 and Class 9 are permitted to use Education Board-approved calculators during the examination.",
+      "Examinees must carefully review the exam timetable and seat plan before sitting in their designated seats.",
+      "Students must attend school in full uniform and enter the examination hall at least 30 minutes before the exam begins."
+    ],
+    "timetable": [
+      {
+        "date": "19-11-2026",
+        "day": "Thursday",
+        "class6": "English 1st Paper",
+        "class7": "English 1st Paper",
+        "class8": "English 1st Paper",
+        "class9": "English 1st Paper"
+      },
+      {
+        "date": "22-11-2026",
+        "day": "Sunday",
+        "class6": "English 2nd Paper",
+        "class7": "English 2nd Paper",
+        "class8": "English 2nd Paper",
+        "class9": "English 2nd Paper"
+      },
+      {
+        "date": "23-11-2026",
+        "day": "Monday",
+        "class6": "Islamic Studies / Hindu Religious Studies",
+        "class7": "Islamic Studies / Hindu Religious Studies",
+        "class8": "Islamic Studies / Hindu Religious Studies",
+        "class9": "Islamic Studies / Hindu Religious Studies"
+      },
+      {
+        "date": "24-11-2026",
+        "day": "Tuesday",
+        "class6": "Bangla 1st Paper",
+        "class7": "Bangla 1st Paper",
+        "class8": "Bangla 1st Paper",
+        "class9": "Bangla 1st Paper"
+      },
+      {
+        "date": "25-11-2026",
+        "day": "Wednesday",
+        "class6": "Bangla 2nd Paper",
+        "class7": "Bangla 2nd Paper",
+        "class8": "Bangla 2nd Paper",
+        "class9": "Bangla 2nd Paper"
+      },
+      {
+        "date": "26-11-2026",
+        "day": "Thursday",
+        "class6": "—",
+        "class7": "—",
+        "class8": "—",
+        "class9": "Bangladesh & Global Studies / General Science"
+      },
+      {
+        "date": "29-11-2026",
+        "day": "Sunday",
+        "class6": "Mathematics",
+        "class7": "Mathematics",
+        "class8": "Mathematics",
+        "class9": "Mathematics"
+      },
+      {
+        "date": "30-11-2026",
+        "day": "Monday",
+        "class6": "ICT",
+        "class7": "ICT",
+        "class8": "ICT",
+        "class9": "ICT"
+      },
+      {
+        "date": "01-12-2026",
+        "day": "Tuesday",
+        "class6": "Bangladesh & Global Studies",
+        "class7": "Bangladesh & Global Studies",
+        "class8": "Bangladesh & Global Studies",
+        "class9": "Physics / History of Bangladesh & World Civilization / Accounting"
+      },
+      {
+        "date": "02-12-2026",
+        "day": "Wednesday",
+        "class6": "—",
+        "class7": "—",
+        "class8": "—",
+        "class9": "Biology / Geography & Environment / Business Entrepreneurship"
+      },
+      {
+        "date": "03-12-2026",
+        "day": "Thursday",
+        "class6": "General Science",
+        "class7": "General Science",
+        "class8": "General Science",
+        "class9": "Chemistry / Civics & Citizenship / Economics / Finance & Banking"
+      },
+      {
+        "date": "06-12-2026",
+        "day": "Sunday",
+        "class6": "—",
+        "class7": "—",
+        "class8": "—",
+        "class9": "Higher Mathematics / Agricultural Studies"
+      }
+    ]
+  }
+]

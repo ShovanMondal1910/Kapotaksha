@@ -1,0 +1,74 @@
+[
+  {
+    "id": "annual-exam-2026",
+    "type": "exam notice",
+    "badge": "Exam",
+    "badgeClass": "badge-exam",
+    "date": "2026-11-16",
+    "displayDate": "November 16, 2026",
+    "title": "Annual Exam Schedule | 2026",
+    "excerpt": "The official examination timetable for the Annual Examination 2026 (Classes 6 to 9) has been published. Exams will commence on <strong>19th November 2026</strong> (Thursday) at <strong>10:00 AM daily</strong>.",
+    "link": "templates/annual-exam-schedule-2026.html",
+    "isFeatured": true
+  },
+  {
+    "id": "inter-school-science-fair-2026",
+    "type": "activity",
+    "badge": "Activity",
+    "badgeClass": "badge-activity",
+    "date": "2026-07-20",
+    "displayDate": "July 20, 2026",
+    "title": "Inter-School Science Fair | Participation Open",
+    "excerpt": "Kapotaksha High School is participating in the District Inter-School Science Fair on <strong>15th August 2026</strong>. Students from classes 8 – 10 may register by submitting a project proposal before <strong>30th July 2026</strong>.",
+    "link": "templates/activity-template.html",
+    "isFeatured": false
+  },
+  {
+    "id": "ssc-result-2026",
+    "type": "news",
+    "badge": "News",
+    "badgeClass": "badge-news",
+    "date": "2026-07-10",
+    "displayDate": "July 10, 2026",
+    "title": "KHS Students Excel in SSC Result 2026",
+    "excerpt": "We are proud to announce a <strong>98% pass rate</strong> in the SSC Examination 2026, with <strong>42 students securing GPA 5.0</strong>. The school management congratulates all successful students.",
+    "link": "templates/news-template.html",
+    "isFeatured": false
+  },
+  {
+    "id": "half-yearly-result-2026",
+    "type": "exam",
+    "badge": "Exam",
+    "badgeClass": "badge-exam",
+    "date": "2026-07-05",
+    "displayDate": "July 5, 2026",
+    "title": "Half-Yearly Exam Results Published",
+    "excerpt": "Results of the Half-Yearly Examination 2026 have been published. Students may collect mark sheets from <strong>8th July 2026</strong>. Parent – Teacher Meeting: <strong>12th July at 10:00 AM</strong>.",
+    "link": "templates/exam-template.html",
+    "isFeatured": false
+  },
+  {
+    "id": "annual-sports-day-2026",
+    "type": "activity",
+    "badge": "Activity",
+    "badgeClass": "badge-activity",
+    "date": "2026-06-28",
+    "displayDate": "June 28, 2026",
+    "title": "Annual Sports Day | Registration Now Open",
+    "excerpt": "The Annual Sports Day will be held on <strong>20th September 2026</strong>. Students interested in athletic events must register with their Physical Education teacher by <strong>10th September 2026</strong>.",
+    "link": "templates/activity-template.html",
+    "isFeatured": false
+  },
+  {
+    "id": "fees-reminder-july-2026",
+    "type": "notice",
+    "badge": "Notice",
+    "badgeClass": "badge-notice",
+    "date": "2026-06-15",
+    "displayDate": "June 15, 2026",
+    "title": "School Fees Payment Reminder | July 2026",
+    "excerpt": "All students are reminded to clear their fees for July 2026 by <strong>15th July 2026</strong>. Late payment will attract a fine as per school policy. Queries: school accounts office 9 AM – 2 PM.",
+    "link": "templates/notice-template.html",
+    "isFeatured": false
+  }
+]
