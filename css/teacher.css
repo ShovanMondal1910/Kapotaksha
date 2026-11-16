@@ -1,3 +1,8 @@
+body.teacher-page {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #f4f6f9;
+}
+
 .teacher-card {
     background-color: #ffffff;
     border: 1px solid #e0e9f1;

@@ -834,3 +834,11 @@
         width: 100%;
     }
 }
+
+/* Roster Table Styles */
+.roster-th-sl { width: 50px; }
+.roster-th-roll { width: 90px; }
+.roster-td-sl { color: #64748b; font-weight: 600; }
+.roster-name-strong { color: #0f172a; }
+.roster-class-span { color: #334155; font-weight: 600; }
+.roster-empty-msg { display: none; }

@@ -118,3 +118,11 @@
         height: 230px;
     }
 }
+
+/* Specific Team Card Backgrounds */
+.team-bg-dev { background-image: url('../photos/DevelopmentTeam.jpg'); }
+.team-bg-design { background-image: url('../photos/Design Team.jpg'); }
+.team-bg-media { background-image: url('../photos/MediaTeam.jpg'); }
+.team-bg-event { background-image: url('../photos/EventOrganizerTeam.jpg'); }
+.team-bg-pr { background-image: url('../photos/PublicRelationTeam.jpg'); }
+.team-bg-social { background-image: url('../photos/SocialEngagementTeam.jpg'); }
