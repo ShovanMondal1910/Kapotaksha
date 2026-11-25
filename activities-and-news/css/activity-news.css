@@ -242,6 +242,47 @@
     color: #ffffff;
 }
 
+/* ── Show More Button ────────────────────────────── */
+.notice-load-more-wrap {
+    text-align: center;
+    margin-top: 36px;
+}
+
+.btn-show-more-notices {
+    background-color: #ffffff;
+    color: #1e88e5;
+    border: 2px solid #1e88e5;
+    padding: 10px 28px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 14px rgba(30, 136, 229, 0.12);
+}
+
+.btn-show-more-notices:hover {
+    background-color: #1e88e5;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(30, 136, 229, 0.25);
+}
+
+.btn-show-more-notices:active {
+    transform: translateY(0);
+}
+
+.btn-show-more-notices svg {
+    transition: transform 0.25s ease;
+}
+
+.btn-show-more-notices:hover svg {
+    transform: translateY(2px);
+}
+
 /* ── Empty State ─────────────────────────────────── */
 .notice-empty {
     display: none;

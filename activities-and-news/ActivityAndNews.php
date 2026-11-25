@@ -168,6 +168,16 @@ include __DIR__ . '/../components/navbar.php';
 
             </div><!-- /#noticeList -->
 
+            <!-- Show More Button -->
+            <div class="notice-load-more-wrap" id="noticeLoadMoreWrap" style="display: none;">
+                <button type="button" class="btn-show-more-notices" id="btnShowMoreNotices">
+                    <span>Show More</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+            </div>
+
             <!-- Empty state (shown by JS when no notices match filter) -->
             <div class="notice-empty" id="noticeEmpty">
                 <p>No notices found for this category.</p>
