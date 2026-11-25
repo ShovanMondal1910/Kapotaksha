@@ -29,10 +29,10 @@ include __DIR__ . '/../components/navbar.php';
             </p>
             <div class="clubs-quick-stats">
                 <div class="club-stat-pill">
-                    <span>🏛️</span> Active Clubs: <strong>8 Societies</strong>
+                    <span>🏛️</span> Active Clubs: <strong>3 Societies</strong>
                 </div>
                 <div class="club-stat-pill">
-                    <span>👥</span> Student Members: <strong>350+ Students</strong>
+                    <span>👥</span> Student Members: <strong>180+ Students</strong>
                 </div>
                 <div class="club-stat-pill">
                     <span>🏆</span> Annual Events: <strong>15+ Competitions</strong>
