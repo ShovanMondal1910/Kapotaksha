@@ -1,22 +1,4 @@
-// Category Filter Logic
-        document.querySelectorAll('.club-filter-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const filter = btn.getAttribute('data-filter');
-                document.querySelectorAll('.club-filter-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-
-                document.querySelectorAll('.club-col').forEach(col => {
-                    const cat = col.getAttribute('data-category');
-                    if (filter === 'all' || cat === filter) {
-                        col.style.display = '';
-                    } else {
-                        col.style.display = 'none';
-                    }
-                });
-            });
-        });
-
-        // Club Member Rosters Data
+// Club Member Rosters Data
         const CLUB_ROSTERS = {
             "KHS Debating Society": {
                 category: "Academic & Public Speaking",

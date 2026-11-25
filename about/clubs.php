@@ -54,14 +54,6 @@ include __DIR__ . '/../components/navbar.php';
                 <p class="clubs-desc">Choose from our diverse co-curricular societies guided by dedicated faculty moderators.</p>
             </div>
 
-            <!-- Filter Categories -->
-            <div class="club-filters-wrapper">
-                <button class="club-filter-btn active" data-filter="all">All Clubs (8)</button>
-                <button class="club-filter-btn" data-filter="academic">Academic &amp; STEM</button>
-                <button class="club-filter-btn" data-filter="cultural">Arts &amp; Culture</button>
-                <button class="club-filter-btn" data-filter="sports">Sports &amp; Fitness</button>
-                <button class="club-filter-btn" data-filter="service">Leadership &amp; Service</button>
-            </div>
 
             <!-- Clubs Grid -->
             <div class="row g-4" id="clubs-grid">
