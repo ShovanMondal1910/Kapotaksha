@@ -26,52 +26,51 @@
     // Comprehensive Site Search Index
     const SITE_INDEX = [
         // ── About & Main ──
-        { title: "About Kapotaksha High School (KHS)", category: "About", url: "index.html#about-ahs", snippet: "Kapotaksha High School history, mission, values, and location." },
-        { title: "Campus & Facilities", category: "Campus", url: "about/facilities.html", snippet: "Explore smart classrooms, science labs, ICT computer center, library, sports ground, and facilities." },
-        { title: "3D Virtual Campus Tour", category: "Campus", url: "about/facilities.html#campus-3d-section", snippet: "Interactive 3D campus viewer with day/night mode, orbit controls, and building markers." },
-        { title: "Student Clubs & Co-Curriculars", category: "Clubs", url: "about/clubs.html", snippet: "Debate, Science & STEM, Arts, Cultural Academy, Scouts, Sports, and Wall Magazine societies." },
-        { title: "KHS Debating Society", category: "Clubs", url: "about/clubs.html", snippet: "Parliamentary debating, public speaking, and annual debate championships." },
-        { title: "Science & STEM Club", category: "Clubs", url: "about/clubs.html", snippet: "Hands-on robotics, science fair projects, coding, and math olympiad training." },
-        { title: "Chairman's Message", category: "Leadership", url: "index.html#leadership-messages", snippet: "Message from the Chairman of School Managing Committee (SMC), Kapotaksha High School." },
-        { title: "Head Teacher's Message", category: "Leadership", url: "index.html#leadership-messages", snippet: "Message from Head Teacher Ramen Chandra Roy on academic vision and student development." },
-        { title: "Rules & Regulations", category: "Policy", url: "about/RulesRegulation.html", snippet: "Official code of conduct, academic policies, discipline, and school rules." },
-        { title: "Intimidation & Anti-Bullying Policy", category: "Policy", url: "about/IntimidationPolicy.html", snippet: "Zero-tolerance policy on intimidation, harassment, safety and student welfare." },
-        { title: "Contact & Location", category: "Contact", url: "index.html#contact", snippet: "School address: Padmapukur, Koyra, Khulna. Email: s117204s@gmail.com." },
+        { title: "About Kapotaksha High School (KHS)", category: "About", url: "index.php#about-ahs", snippet: "Kapotaksha High School history, mission, values, and location." },
+        { title: "Campus & Facilities", category: "Campus", url: "about/facilities.php", snippet: "Explore smart classrooms, science labs, ICT computer center, library, sports ground, and facilities." },
+        { title: "3D Virtual Campus Tour", category: "Campus", url: "about/facilities.php#campus-3d-section", snippet: "Interactive 3D campus viewer with day/night mode, orbit controls, and building markers." },
+        { title: "Student Clubs & Co-Curriculars", category: "Clubs", url: "about/clubs.php", snippet: "Debate, Science & STEM, Arts, Cultural Academy, Scouts, Sports, and Wall Magazine societies." },
+        { title: "KHS Debating Society", category: "Clubs", url: "about/clubs.php", snippet: "Parliamentary debating, public speaking, and annual debate championships." },
+        { title: "Science & STEM Club", category: "Clubs", url: "about/clubs.php", snippet: "Hands-on robotics, science fair projects, coding, and math olympiad training." },
+        { title: "Chairman's Message", category: "Leadership", url: "index.php#leadership-messages", snippet: "Message from the Chairman of School Managing Committee (SMC), Kapotaksha High School." },
+        { title: "Head Teacher's Message", category: "Leadership", url: "index.php#leadership-messages", snippet: "Message from Head Teacher Ramen Chandra Roy on academic vision and student development." },
+        { title: "Rules & Regulations", category: "Policy", url: "about/RulesRegulation.php", snippet: "Official code of conduct, academic policies, discipline, and school rules." },
+        { title: "Intimidation & Anti-Bullying Policy", category: "Policy", url: "about/IntimidationPolicy.php", snippet: "Zero-tolerance policy on intimidation, harassment, safety and student welfare." },
+        { title: "Contact & Location", category: "Contact", url: "index.php#contact", snippet: "School address: Padmapukur, Koyra, Khulna. Email: s117204s@gmail.com." },
 
         // ── People & Governance ──
-        { title: "Teachers & Staff Directory", category: "People", url: "people/teachers.html", snippet: "Complete directory of teachers and administrative staff at KHS." },
-        { title: "Ramen Chandra Roy (Headmaster)", category: "People", url: "people/teachers.html", snippet: "Headmaster of Kapotaksha High School." },
-        { title: "Bhairab Kumar Mondal (Assistant Headmaster)", category: "People", url: "people/teachers.html", snippet: "Assistant Headmaster of Kapotaksha High School." },
-        { title: "Executive Committee (2025-2026)", category: "People", url: "people/executivecommittee2025-26.html", snippet: "Current governing body, executive leaders, and committee members." },
-        { title: "Founders & History", category: "People", url: "people/Founders.html", snippet: "Visionary founders who established Kapotaksha High School." },
-        { title: "Advisers Panel", category: "People", url: "people/adviser.html", snippet: "Advisory board members guiding KHS development." },
-        { title: "Old Students Association (OSA)", category: "People", url: "people/OSA.html", snippet: "Alumni network, reunions, executive committee, and alumni activities." },
-        { title: "Former Committee Members", category: "People", url: "people/formercommittee.html", snippet: "Archive of previous governing body members and school leadership." },
-        { title: "Students Directory", category: "People", url: "people/students.html", snippet: "Student body information and class representatives." },
+        { title: "Teachers & Staff Directory", category: "People", url: "people/teachers.php", snippet: "Complete directory of teachers and administrative staff at KHS." },
+        { title: "Ramen Chandra Roy (Headmaster)", category: "People", url: "people/teachers.php", snippet: "Headmaster of Kapotaksha High School." },
+        { title: "Bhairab Kumar Mondal (Assistant Headmaster)", category: "People", url: "people/teachers.php", snippet: "Assistant Headmaster of Kapotaksha High School." },
+        { title: "Executive Committee (2025-2026)", category: "People", url: "people/executivecommittee2025-26.php", snippet: "Current governing body, executive leaders, and committee members." },
+        { title: "Founders & History", category: "People", url: "people/Founders.php", snippet: "Visionary founders who established Kapotaksha High School." },
+        { title: "Advisers Panel", category: "People", url: "people/adviser.php", snippet: "Advisory board members guiding KHS development." },
+        { title: "Old Students Association (OSA)", category: "People", url: "people/OSA.php", snippet: "Alumni network, reunions, executive committee, and alumni activities." },
+        { title: "Former Committee Members", category: "People", url: "people/formercommittee.php", snippet: "Archive of previous governing body members and school leadership." },
+        { title: "Students Directory", category: "People", url: "people/students.php", snippet: "Student body information and class representatives." },
 
         // ── Activities & News ──
-        { title: "Activities & News Portal", category: "News", url: "activities-and-news/ActivityAndNews.html", snippet: "School announcements, news updates, sports events, and notice board." },
-        { title: "Academic Examination Notice", category: "Notice", url: "activities-and-news/templates/exam-template.html", snippet: "Examination schedules, routines, and guidelines for students." },
-        { title: "Official School Notices", category: "Notice", url: "activities-and-news/templates/notice-template.html", snippet: "Important school circulars, holiday notices, and administrative updates." },
-        { title: "Co-Curricular Activities", category: "Activities", url: "activities-and-news/templates/activity-template.html", snippet: "Debate, sports, science fair, cultural competitions, and student clubs." },
+        { title: "Activities & News Portal", category: "News", url: "activities-and-news/ActivityAndNews.php", snippet: "School announcements, news updates, sports events, and notice board." },
+        { title: "Academic Examination Notice", category: "Notice", url: "activities-and-news/Notices/exam/annual-exam-schedule-2026.php", snippet: "Examination schedules, routines, and guidelines for students." },
+        { title: "Official School Notices", category: "Notice", url: "activities-and-news/Notices/notice/fee-payment-reminder-july-2026.php", snippet: "Important school circulars, holiday notices, and administrative updates." },
+        { title: "Co-Curricular Activities", category: "Activities", url: "activities-and-news/Notices/activity/annual-sports-day-2026.php", snippet: "Debate, sports, science fair, cultural competitions, and student clubs." },
 
         // ── Events ──
-        { title: "School Events Overview", category: "Events", url: "events/Events.html", snippet: "Annual celebrations, festivals, orientation sessions, and cultural events." },
-        { title: "Saraswati Puja 2026", category: "Events", url: "events/saraswatiPuja2026.html", snippet: "Saraswati Puja festival celebrations, schedule, and photo gallery." },
-        { title: "Saraswati Puja 2025", category: "Events", url: "events/saraswatiPuja2025.html", snippet: "Archive of Saraswati Puja 2025 celebration." },
-        { title: "Durga Puja Celebration", category: "Events", url: "events/durgaPuja2025.html", snippet: "Annual Durga Puja celebration and festivities." },
-        { title: "Holi Festival 2026", category: "Events", url: "events/holi2026.html", snippet: "Holi spring festival celebrations at KHS campus." },
-        { title: "Summer Orientation 2026", category: "Events", url: "events/summerOrientation2026.html", snippet: "Welcoming new students during Summer 2026 Orientation." },
-        { title: "Spring Orientation 2026", category: "Events", url: "events/springOrientation2026.html", snippet: "Spring 2026 student orientation program." },
+        { title: "School Events Overview", category: "Events", url: "events/Events.php", snippet: "Annual celebrations, festivals, orientation sessions, and cultural events." },
+        { title: "Clean School - No Mosquito", category: "Events", url: "events/cleanSchoolNoMosquito.php", snippet: "Hygiene, sanitation, and campus anti-mosquito drive." },
+        { title: "Saraswati Puja Celebration", category: "Events", url: "Media/events/saraswati-puja.php", snippet: "Saraswati Puja festival celebrations, schedule, and photo gallery." },
+        { title: "Durga Puja Celebration", category: "Events", url: "Media/events/durga-puja.php", snippet: "Annual Durga Puja celebration and festivities." },
+        { title: "Holi Festival", category: "Events", url: "Media/events/holi.php", snippet: "Holi spring festival celebrations at KHS campus." },
+        { title: "Orientation Ceremony", category: "Events", url: "Media/events/orientation.php", snippet: "Welcoming new students during KHS student orientation program." },
 
         // ── Media & Photo Gallery ──
-        { title: "Photo Lightbox Gallery", category: "Gallery", url: "Media/Gallery.html", snippet: "Interactive photo gallery with full-screen slideshow viewer and captions." },
-        { title: "Saraswati Puja Photo Gallery", category: "Gallery", url: "Media/events/saraswati-puja.html", snippet: "Photos and full-screen slideshow of Saraswati Puja celebrations." },
-        { title: "Durga Puja Photo Gallery", category: "Gallery", url: "Media/events/durga-puja.html", snippet: "Photos of Durga Puja festivities." },
-        { title: "Holi Celebration Photos", category: "Gallery", url: "Media/events/holi.html", snippet: "Color festival photo album." },
-        { title: "Cultural Evening Photos", category: "Gallery", url: "Media/events/cultural-evening.html", snippet: "Stage performances, music, dance, and drama photo gallery." },
-        { title: "Orientation Photo Album", category: "Gallery", url: "Media/events/orientation.html", snippet: "Summer and Spring student orientation photo gallery." },
-        { title: "AHS Campus & Team Photos", category: "Gallery", url: "Media/events/ahs-photos.html", snippet: "Campus buildings, Development Team, Media Team, and Organizers photo album." }
+        { title: "Photo Lightbox Gallery", category: "Gallery", url: "Media/Gallery.php", snippet: "Interactive photo gallery with full-screen slideshow viewer and captions." },
+        { title: "Saraswati Puja Photo Gallery", category: "Gallery", url: "Media/events/saraswati-puja.php", snippet: "Photos and full-screen slideshow of Saraswati Puja celebrations." },
+        { title: "Durga Puja Photo Gallery", category: "Gallery", url: "Media/events/durga-puja.php", snippet: "Photos of Durga Puja festivities." },
+        { title: "Holi Celebration Photos", category: "Gallery", url: "Media/events/holi.php", snippet: "Color festival photo album." },
+        { title: "Cultural Evening Photos", category: "Gallery", url: "Media/events/cultural-evening.php", snippet: "Stage performances, music, dance, and drama photo gallery." },
+        { title: "Orientation Photo Album", category: "Gallery", url: "Media/events/orientation.php", snippet: "Summer and Spring student orientation photo gallery." },
+        { title: "AHS Campus & Team Photos", category: "Gallery", url: "Media/events/ahs-photos.php", snippet: "Campus buildings, Development Team, Media Team, and Organizers photo album." }
     ];
 
     class SiteSearchEngine {
@@ -85,7 +84,9 @@
 
         computeBasePath() {
             const path = window.location.pathname.replace(/\\/g, '/');
-            if (path.includes('/Media/events/') || path.includes('/activities-and-news/templates/')) {
+            if (path.includes('/activities-and-news/Notices/')) {
+                this.basePath = '../../../';
+            } else if (path.includes('/Media/events/') || path.includes('/activities-and-news/templates/')) {
                 this.basePath = '../../';
             } else if (path.includes('/about/') || path.includes('/people/') || path.includes('/activities-and-news/') || path.includes('/events/') || path.includes('/Media/')) {
                 this.basePath = '../';

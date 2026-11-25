@@ -347,7 +347,7 @@
                 <div class="col-lg-4 col-md-6">
                     <article class="event-list-card">
                         <div class="event-list-img-wrapper">
-                            <img src="../photos/CleanSchoolNo Mosquito2026/Photo1.jpg" alt="KHS Clean School No Mosquito" class="event-list-img" loading="lazy">
+                            <img src="photos/CleanSchoolNo Mosquito2026/Photo1.jpg" alt="KHS Clean School No Mosquito" class="event-list-img" loading="lazy">
                         </div>
                         <div class="event-list-body">
                             <h2 class="event-list-title">Clean School No Mosquito</h2>
@@ -369,7 +369,7 @@
                             <h2 class="event-list-title">Saraswati Puja 2026</h2>
                             <p class="event-list-excerpt">On Friday, 23th January 2026, Kapotaksha High School held the
                                 annual Saraswati Puja celebration on campus...</p>
-                            <a href="events/saraswatiPuja2026.html" class="event-list-read-more">READ MORE</a>
+                            <a href="Media/events/saraswati-puja.php" class="event-list-read-more">READ MORE</a>
                             <p class="event-list-date">January 23, 2026</p>
                         </div>
                     </article>
@@ -386,7 +386,7 @@
                             <h2 class="event-list-title">Holi Festival 2026</h2>
                             <p class="event-list-excerpt">On Tuesday 3rd March, 2026 Kapotaksha High School (KHS)
                                 successfully organized the Holi festival...</p>
-                            <a href="events/holi2026.html" class="event-list-read-more">READ MORE</a>
+                            <a href="Media/events/holi.php" class="event-list-read-more">READ MORE</a>
                             <p class="event-list-date">March 3, 2026</p>
                         </div>
                     </article>

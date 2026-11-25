@@ -5,27 +5,27 @@ const rootDir = path.resolve(__dirname, '..');
 let errorCount = 0;
 let totalChecked = 0;
 
-function getAllHtmlFiles(dir, fileList = []) {
+function getAllFiles(dir, fileList = []) {
   const files = fs.readdirSync(dir);
   for (const file of files) {
     const fullPath = path.join(dir, file);
-    if (['node_modules', '.git', 'dist', 'components'].includes(file)) continue;
+    if (['node_modules', '.git', 'dist', 'components', 'scratch'].includes(file)) continue;
     const stat = fs.statSync(fullPath);
     if (stat.isDirectory()) {
-      getAllHtmlFiles(fullPath, fileList);
-    } else if (file.endsWith('.html')) {
+      getAllFiles(fullPath, fileList);
+    } else if (file.endsWith('.html') || file.endsWith('.php')) {
       fileList.push(fullPath);
     }
   }
   return fileList;
 }
 
-const htmlFiles = getAllHtmlFiles(rootDir);
-console.log(`\x1b[36m🔍 Scanning ${htmlFiles.length} HTML files for link integrity...\x1b[0m\n`);
+const scanFiles = getAllFiles(rootDir);
+console.log(`\x1b[36m🔍 Scanning ${scanFiles.length} files for link integrity...\x1b[0m\n`);
 
 const linkRegex = /(?:href|src)=["']([^"']+)["']/g;
 
-for (const filePath of htmlFiles) {
+for (const filePath of scanFiles) {
   let content = fs.readFileSync(filePath, 'utf8');
   const relFilePath = path.relative(rootDir, filePath);
   const dir = path.dirname(filePath);
@@ -36,9 +36,11 @@ for (const filePath of htmlFiles) {
 
   let match;
 
-
   while ((match = linkRegex.exec(content)) !== null) {
     let rawUrl = match[1].trim();
+
+    // Replace PHP root tags if present
+    rawUrl = rawUrl.replace(/<\?=\s*\$root\s*\?>/g, '');
 
     // Skip external links, data URLs, tel, mailto, empty, or pure hash
     if (
