@@ -32,8 +32,15 @@ htmlFiles.forEach(filePath => {
     const rootPrefix = depth === 0 ? '' : '../'.repeat(depth);
 
     // Prepare navbar and footer for this depth
-    const pageNavbar = navbarTemplate.replace(/\{\{ROOT\}\}/g, rootPrefix);
-    const pageFooter = footerTemplate.replace(/\{\{ROOT\}\}/g, rootPrefix);
+    const cleanNavbar = navbarTemplate
+        .replace(/<\?php[\s\S]*?\?>/g, '')
+        .replace(/<\?=\s*\$root\s*\?>/g, rootPrefix)
+        .replace(/\{\{ROOT\}\}/g, rootPrefix);
+    const cleanFooter = footerTemplate
+        .replace(/<\?php[\s\S]*?\?>/g, '')
+        .replace(/\{\{ROOT\}\}/g, rootPrefix);
+    const pageNavbar = cleanNavbar;
+    const pageFooter = cleanFooter;
 
     let modified = false;
 

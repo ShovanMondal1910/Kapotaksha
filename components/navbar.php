@@ -1,8 +1,11 @@
+<?php
+$root = $root ?? '';
+?>
 <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
     <div class="container-fluid">
         <!-- Brand Logo -->
-        <a class="navbar-brand" href="{{ROOT}}index.html">
-            <img src="{{ROOT}}photos/KHS.png" alt="KHS Logo" class="logo">
+        <a class="navbar-brand" href="<?= $root ?>index.php">
+            <img src="<?= $root ?>photos/KHS.png" alt="KHS Logo" class="logo">
         </a>
 
         <!-- Mobile Hamburger Button -->
@@ -25,17 +28,17 @@
                         About
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ROOT}}index.html#about-ahs">About KHS</a></li>
+                        <li><a class="dropdown-item" href="<?= $root ?>index.php#about-ahs">About KHS</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="{{ROOT}}index.html#leadership-messages">Leadership Messages</a></li>
+                        <li><a class="dropdown-item" href="<?= $root ?>index.php#leadership-messages">Leadership Messages</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="{{ROOT}}about/facilities.html">Campus &amp; Facilities</a></li>
+                        <li><a class="dropdown-item" href="<?= $root ?>about/facilities.html">Campus &amp; Facilities</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="{{ROOT}}about/clubs.html">Clubs &amp; Co-Curriculars</a></li>
+                        <li><a class="dropdown-item" href="<?= $root ?>about/clubs.html">Clubs &amp; Co-Curriculars</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="{{ROOT}}about/RulesRegulation.html">Rules &amp; Regulation</a></li>
+                        <li><a class="dropdown-item" href="<?= $root ?>about/RulesRegulation.html">Rules &amp; Regulation</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="{{ROOT}}about/IntimidationPolicy.html">Intimidation Policy</a></li>
+                        <li><a class="dropdown-item" href="<?= $root ?>about/IntimidationPolicy.html">Intimidation Policy</a></li>
                     </ul>
                 </li>
 
@@ -45,30 +48,30 @@
                         People
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ROOT}}people/OSA.html">OSA</a></li>
+                        <li><a class="dropdown-item" href="<?= $root ?>people/OSA.html">OSA</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="{{ROOT}}people/Founders.html">Founders</a></li>
+                        <li><a class="dropdown-item" href="<?= $root ?>people/Founders.html">Founders</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="{{ROOT}}people/executivecommittee2025-26.html">Executive Committee</a></li>
+                        <li><a class="dropdown-item" href="<?= $root ?>people/executivecommittee2025-26.html">Executive Committee</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="{{ROOT}}people/formercommittee.html">Former Committee</a></li>
+                        <li><a class="dropdown-item" href="<?= $root ?>people/formercommittee.html">Former Committee</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="{{ROOT}}people/adviser.html">Adviser</a></li>
+                        <li><a class="dropdown-item" href="<?= $root ?>people/adviser.html">Adviser</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="{{ROOT}}people/teachers.html">Teachers &amp; Staff</a></li>
+                        <li><a class="dropdown-item" href="<?= $root ?>people/teachers.html">Teachers &amp; Staff</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="{{ROOT}}people/students.html">Students</a></li>
+                        <li><a class="dropdown-item" href="<?= $root ?>people/students.html">Students</a></li>
                     </ul>
                 </li>
 
                 <!-- Activities & News -->
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ROOT}}activities-and-news/ActivityAndNews.html">Activities &amp; News</a>
+                    <a class="nav-link" href="<?= $root ?>activities-and-news/ActivityAndNews.html">Activities &amp; News</a>
                 </li>
 
                 <!-- Events -->
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ROOT}}events/Events.html">Events</a>
+                    <a class="nav-link" href="<?= $root ?>events/Events.html">Events</a>
                 </li>
 
                 <!-- Media Dropdown -->
@@ -77,13 +80,13 @@
                         Media
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="{{ROOT}}Media/Gallery.html">Gallery</a></li>
+                        <li><a class="dropdown-item" href="<?= $root ?>Media/Gallery.html">Gallery</a></li>
                     </ul>
                 </li>
 
                 <!-- Contact -->
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ROOT}}index.html#contact">Contact</a>
+                    <a class="nav-link" href="<?= $root ?>index.php#contact">Contact</a>
                 </li>
 
             </ul>

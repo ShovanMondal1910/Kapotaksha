@@ -8,12 +8,14 @@
 # Prevents attackers from viewing directory contents when index file is absent
 # ------------------------------------------------------------------------------
 Options -Indexes -MultiViews
+DirectoryIndex index.php index.html
 
 # ------------------------------------------------------------------------------
-# 2. FORCE SECURE HTTPS CONNECTION
+# 2. FORCE SECURE HTTPS CONNECTION & ROUTE INDEX
 # ------------------------------------------------------------------------------
 <IfModule mod_rewrite.c>
     RewriteEngine On
+    RewriteRule ^index\.html$ index.php [L,QSA]
     RewriteCond %{HTTPS} !=on
     RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>

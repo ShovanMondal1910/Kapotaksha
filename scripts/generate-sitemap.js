@@ -8,7 +8,7 @@ function getAllHtml(dir, list = []) {
     if (['node_modules', '.git', 'scripts', 'templates', 'components'].includes(file)) return;
     if (fs.statSync(full).isDirectory()) {
       getAllHtml(full, list);
-    } else if (file.endsWith('.html')) {
+    } else if (file.endsWith('.html') || file.endsWith('.php')) {
       list.push(full);
     }
   });
@@ -25,7 +25,7 @@ htmlFiles.forEach(file => {
   let priority = '0.8';
   let changefreq = 'weekly';
 
-  if (rel === 'index.html') {
+  if (rel === 'index.html' || rel === 'index.php') {
     priority = '1.0';
     changefreq = 'daily';
     rel = '';
