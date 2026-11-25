@@ -48,19 +48,19 @@ $root = $root ?? '';
                         People
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="<?= $root ?>people/OSA.html">OSA</a></li>
+                        <li><a class="dropdown-item" href="<?= $root ?>people/OSA.php">OSA</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="<?= $root ?>people/Founders.html">Founders</a></li>
+                        <li><a class="dropdown-item" href="<?= $root ?>people/Founders.php">Founders</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="<?= $root ?>people/executivecommittee2025-26.html">Executive Committee</a></li>
+                        <li><a class="dropdown-item" href="<?= $root ?>people/executivecommittee2025-26.php">Executive Committee</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="<?= $root ?>people/formercommittee.html">Former Committee</a></li>
+                        <li><a class="dropdown-item" href="<?= $root ?>people/formercommittee.php">Former Committee</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="<?= $root ?>people/adviser.html">Adviser</a></li>
+                        <li><a class="dropdown-item" href="<?= $root ?>people/adviser.php">Adviser</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="<?= $root ?>people/teachers.html">Teachers &amp; Staff</a></li>
+                        <li><a class="dropdown-item" href="<?= $root ?>people/teachers.php">Teachers &amp; Staff</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="<?= $root ?>people/students.html">Students</a></li>
+                        <li><a class="dropdown-item" href="<?= $root ?>people/students.php">Students</a></li>
                     </ul>
                 </li>
 
