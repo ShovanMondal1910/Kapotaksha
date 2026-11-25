@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    ".htaccess": "properties",
+    "_headers": "properties",
+    "web.config": "xml",
+    ".editorconfig": "properties"
+  }
+}

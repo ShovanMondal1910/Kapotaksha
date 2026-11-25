@@ -1,8 +1,0 @@
-User-agent: *
-Allow: /
-
-# Disallow internal assets and maintenance scripts
-Disallow: /scripts/
-Disallow: /templates/
-
-Sitemap: https://yourdomain.com/sitemap.xml
