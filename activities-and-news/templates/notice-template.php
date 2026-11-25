@@ -256,7 +256,7 @@ include __DIR__ . '/../../components/navbar.php';
                         <div id="original-notice" class="mt-5 pt-3">
                             <h3 class="h5 fw-bold text-dark mb-3">Official Notice Copy</h3>
                             <div class="post-cover text-center">
-                                <a href="../../photos/AnnualExamRoutine2026.jpg" target="_blank" title="Click to view full image">
+                                <a href="../../photos/AnnualExamRoutine2026.jpg" target="_blank" rel="noopener noreferrer" title="Click to view full image">
                                     <img src="../../photos/AnnualExamRoutine2026.jpg" alt="Annual Exam Routine 2026 Original Document" class="img-fluid rounded border shadow-sm exam-notice-img">
                                 </a>
                                 <p class="post-cover-caption mt-2">Kapotaksha High School — Annual Examination Schedule 2026 (Click on the image to view full size)</p>

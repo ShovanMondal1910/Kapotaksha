@@ -13,7 +13,7 @@ function getAllFiles(dir, fileList = []) {
     const stat = fs.statSync(fullPath);
     if (stat.isDirectory()) {
       getAllFiles(fullPath, fileList);
-    } else if (file.endsWith('.html') || file.endsWith('.php')) {
+    } else if (file.endsWith('.php')) {
       fileList.push(fullPath);
     }
   }

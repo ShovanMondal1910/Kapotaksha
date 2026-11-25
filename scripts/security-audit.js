@@ -18,7 +18,7 @@ function getAllFiles(dir, list = []) {
     if (['node_modules', '.git', 'dist', 'scripts'].includes(file)) return;
     if (fs.statSync(full).isDirectory()) {
       getAllFiles(full, list);
-    } else if (file.endsWith('.html') || file.endsWith('.js')) {
+    } else if (file.endsWith('.php') || file.endsWith('.js')) {
       list.push(full);
     }
   });

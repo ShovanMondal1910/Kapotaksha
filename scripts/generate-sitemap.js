@@ -8,7 +8,7 @@ function getAllHtml(dir, list = []) {
     if (['node_modules', '.git', 'scripts', 'templates', 'components'].includes(file)) return;
     if (fs.statSync(full).isDirectory()) {
       getAllHtml(full, list);
-    } else if (file.endsWith('.html') || file.endsWith('.php')) {
+    } else if (file.endsWith('.php')) {
       list.push(full);
     }
   });

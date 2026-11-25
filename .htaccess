@@ -3,7 +3,7 @@
 # ════════════════════════════════════════════════════
 
 # 1. Default Directory Index
-DirectoryIndex index.php index.html
+DirectoryIndex index.php
 
 # 2. Custom Error Documents
 ErrorDocument 404 /404.php
