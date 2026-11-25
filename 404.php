@@ -9,72 +9,8 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/404.css">
     <link rel="icon" href="photos/KHS.png" type="image/png">
-    <style>
-        .error-page-wrapper {
-            min-height: 65vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 80px 20px;
-            background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
-        }
-        .error-code {
-            font-size: 6rem;
-            font-weight: 900;
-            color: #1a72b8;
-            line-height: 1;
-            margin-bottom: 12px;
-            letter-spacing: -2px;
-        }
-        .error-title {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: #1e293b;
-            margin-bottom: 16px;
-        }
-        .error-desc {
-            font-size: 1.05rem;
-            color: #64748b;
-            max-width: 520px;
-            margin: 0 auto 30px;
-            line-height: 1.6;
-        }
-        .error-actions {
-            display: flex;
-            gap: 14px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .btn-error-primary {
-            background-color: #1a72b8;
-            color: #fff;
-            padding: 10px 24px;
-            border-radius: 6px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: background 0.2s ease;
-        }
-        .btn-error-primary:hover {
-            background-color: #1565c0;
-            color: #fff;
-        }
-        .btn-error-secondary {
-            background-color: #f1f5f9;
-            color: #334155;
-            padding: 10px 24px;
-            border-radius: 6px;
-            font-weight: 600;
-            text-decoration: none;
-            border: 1px solid #cbd5e1;
-            transition: all 0.2s ease;
-        }
-        .btn-error-secondary:hover {
-            background-color: #e2e8f0;
-            color: #1e293b;
-        }
-    </style>
 </head>
 <body>
 
