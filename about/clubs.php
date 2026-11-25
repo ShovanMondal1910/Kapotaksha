@@ -166,50 +166,6 @@ include __DIR__ . '/../components/navbar.php';
                         </div>
                     </div>
 
-                    <!-- Event 2 -->
-                    <div class="timeline-card">
-                        <div class="timeline-date-badge">
-                            <div class="timeline-date-day">20</div>
-                            <div class="timeline-date-month">SEP 2026</div>
-                        </div>
-                        <div class="timeline-content">
-                            <div class="timeline-event-org">KHS Debating Society</div>
-                            <h3 class="timeline-event-title">KHS Inter-House Parliamentary Debate Championship</h3>
-                            <p class="timeline-event-desc">
-                                Three-day rigorous debate tournament in Bengali &amp; English featuring 16 student teams arguing contemporary national and educational motions.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Event 3 -->
-                    <div class="timeline-card">
-                        <div class="timeline-date-badge">
-                            <div class="timeline-date-day">10</div>
-                            <div class="timeline-date-month">NOV 2026</div>
-                        </div>
-                        <div class="timeline-content">
-                            <div class="timeline-event-org">Sports &amp; Athletics Club</div>
-                            <h3 class="timeline-event-title">Annual Sports Competition &amp; Athletic Meet</h3>
-                            <p class="timeline-event-desc">
-                                Track sprints, high jump, cricket cup, and football finals held on the main sports grounds, followed by the grand championship prize distribution ceremony.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Event 4 -->
-                    <div class="timeline-card">
-                        <div class="timeline-date-badge">
-                            <div class="timeline-date-day">16</div>
-                            <div class="timeline-date-month">DEC 2026</div>
-                        </div>
-                        <div class="timeline-content">
-                            <div class="timeline-event-org">Cultural Club &amp; Scout Troop</div>
-                            <h3 class="timeline-event-title">Victory Day Cultural Gala &amp; Wall Magazine Launch</h3>
-                            <p class="timeline-event-desc">
-                                Solemn patriotic assembly, parade by KHS Scout Troop, stage drama, and inauguration of the Victory Day edition of <em>"Kapotaksha Prabaha"</em> wall magazine.
-                            </p>
-                        </div>
-                    </div>
 
                 </div>
             </div>
