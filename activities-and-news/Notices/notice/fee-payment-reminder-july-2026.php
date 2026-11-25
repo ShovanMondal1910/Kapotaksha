@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Annual Exam Schedule 2026 | Kapotaksha High School</title>
-    <link href="../../libs/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/base.css">
-    <link rel="stylesheet" href="../../css/navbar.css">
-    <link rel="stylesheet" href="../../css/footer.css">
-    <link rel="stylesheet" href="../css/post.css">
-    <link rel="icon" href="../../photos/KHS.png" type="image/png">
+    <title>School Fees Payment Reminder | Kapotaksha High School</title>
+    <link href="../../../libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="stylesheet" href="../../../css/navbar.css">
+    <link rel="stylesheet" href="../../../css/footer.css">
+    <link rel="stylesheet" href="../../css/post.css">
+    <link rel="icon" href="../../../photos/KHS.png" type="image/png">
 </head>
 <body>
 
     <?php
 $root = '../../';
-include __DIR__ . '/../../components/navbar.php';
+include __DIR__ . '/../../../components/navbar.php';
 ?>
 
     <!-- ── POST WRAPPER ────────────────────────────────────────────────── -->
@@ -25,9 +25,9 @@ include __DIR__ . '/../../components/navbar.php';
             <!-- Breadcrumb -->
             <nav aria-label="breadcrumb" class="post-breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../ActivityAndNews.php">Activities &amp; News</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Annual Exam Schedule | 2026</li>
+                    <li class="breadcrumb-item"><a href="../../../index.php">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../../ActivityAndNews.php">Activities &amp; News</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Fee Reminder</li>
                 </ol>
             </nav>
 
@@ -37,13 +37,13 @@ include __DIR__ . '/../../components/navbar.php';
                     <!-- ── POST HEADER ──────────────────────────────── -->
                     <header class="post-header text-center text-md-start">
                         <div class="post-meta-top justify-content-center justify-content-md-start">
-                            <span class="post-badge badge-exam">Exam Routine</span>
+                            
                             <span class="post-badge badge-notice">Notice</span>
-                            <time class="post-date" datetime="2026-11-16">November 16, 2026</time>
+                            <time class="post-date" datetime="2026-06-15">June 15, 2026</time>
                         </div>
-                        <h1 class="post-title">Annual Exam Schedule | 2026</h1>
+                        <h1 class="post-title">School Fees Payment Reminder  |  July 2026</h1>
                         <h2 class="h5 text-primary fw-bold mb-2">Kapotaksha High School, Koyra, Khulna</h2>
-                        <p class="post-lead">Official Examination Timetable and Special Instructions for Annual Examination 2026 (Classes 6 to 9).</p>
+                        <p class="post-lead">All students are reminded to clear their fees for July 2026 by 15th July 2026. Late payment will attract a fine as per school policy. Queries: school accounts office 9 AM | 2 PM.</p>
                     </header>
 
 
@@ -256,8 +256,8 @@ include __DIR__ . '/../../components/navbar.php';
                         <div id="original-notice" class="mt-5 pt-3">
                             <h3 class="h5 fw-bold text-dark mb-3">Official Notice Copy</h3>
                             <div class="post-cover text-center">
-                                <a href="../../photos/AnnualExamRoutine2026.jpg" target="_blank" title="Click to view full image">
-                                    <img src="../../photos/AnnualExamRoutine2026.jpg" alt="Annual Exam Routine 2026 Original Document" class="img-fluid rounded border shadow-sm exam-notice-img">
+                                <a href="../../../photos/AnnualExamRoutine2026.jpg" target="_blank" title="Click to view full image">
+                                    <img src="../../../photos/AnnualExamRoutine2026.jpg" alt="Annual Exam Routine 2026 Original Document" class="img-fluid rounded border shadow-sm exam-notice-img">
                                 </a>
                                 <p class="post-cover-caption mt-2">Kapotaksha High School — Annual Examination Schedule 2026 (Click on the image to view full size)</p>
                             </div>
@@ -268,7 +268,7 @@ include __DIR__ . '/../../components/navbar.php';
 
                     <!-- ── BACK BUTTON ───────────────────────────────── -->
                     <div class="post-back">
-                        <a href="../ActivityAndNews.php" class="post-back-btn">&larr; Back to Activities &amp; News</a>
+                        <a href="../../ActivityAndNews.php" class="post-back-btn">&larr; Back to Activities &amp; News</a>
                     </div>
 
                 </div>
@@ -279,10 +279,10 @@ include __DIR__ . '/../../components/navbar.php';
     <!-- Back to Top -->
     <a href="#" class="back-to-top" aria-label="Back to top">&#8679;</a>
 
-    <?php include __DIR__ . '/../../components/footer.php'; ?>
+    <?php include __DIR__ . '/../../../components/footer.php'; ?>
 
-    <script src="../../libs/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="../../js/search.js"></script>
-    <script src="../../js/main.js"></script>
+    <script src="../../../libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../../../js/search.js"></script>
+    <script src="../../../js/main.js"></script>
 </body>
 </html>

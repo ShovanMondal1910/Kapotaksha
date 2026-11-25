@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activity  |  Kapotaksha High School</title>
-    <link href="../../libs/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/base.css">
-    <link rel="stylesheet" href="../../css/navbar.css">
-    <link rel="stylesheet" href="../../css/footer.css">
-    <link rel="stylesheet" href="../css/post.css">
-    <link rel="icon" href="../../photos/KHS.png" type="image/png">
+    <title>Annual Sports Day 2026 | Kapotaksha High School</title>
+    <link href="../../../libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="stylesheet" href="../../../css/navbar.css">
+    <link rel="stylesheet" href="../../../css/footer.css">
+    <link rel="stylesheet" href="../../css/post.css">
+    <link rel="icon" href="../../../photos/KHS.png" type="image/png">
 </head>
 <body>
 
@@ -17,7 +17,7 @@
     <!-- Navigation Bar -->
     <?php
 $root = '../../';
-include __DIR__ . '/../../components/navbar.php';
+include __DIR__ . '/../../../components/navbar.php';
 ?>
 
     <!-- --- POST WRAPPER ------------------------------------------------ -->
@@ -27,8 +27,8 @@ include __DIR__ . '/../../components/navbar.php';
             <!-- Breadcrumb -->
             <nav aria-label="breadcrumb" class="post-breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../ActivityAndNews.php">Activities &amp; News</a></li>
+                    <li class="breadcrumb-item"><a href="../../../index.php">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../../ActivityAndNews.php">Activities &amp; News</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Activity</li>
                 </ol>
             </nav>
@@ -41,12 +41,12 @@ include __DIR__ . '/../../components/navbar.php';
                         <div class="post-meta-top">
                             <span class="post-badge badge-activity">Activity</span>
                             <!-- ?? Update the date -->
-                            <time class="post-date" datetime="2026-07-20">July 20, 2026</time>
+                            <time class="post-date" datetime="2026-06-28">June 28, 2026</time>
                         </div>
                         <!-- ?? Update the title -->
-                        <h1 class="post-title">Inter-School Science Fair  |  2026</h1>
+                        <h1 class="post-title">Annual Sports Day  |  Registration Now Open</h1>
                         <!-- ?? Short intro line (optional) -->
-                        <p class="post-lead">Kapotaksha High School students showcased their scientific talent at the District Inter-School Science Fair held on 15th August 2026.</p>
+                        <p class="post-lead">The Annual Sports Day will be held on 20th September 2026. Students interested in athletic events must register with their Physical Education teacher by 10th September 2026.</p>
                     </header>
 
                     <!-- -- COVER PHOTO --------------------------------- -->
@@ -55,7 +55,7 @@ include __DIR__ . '/../../components/navbar.php';
                         Remove this block if no cover photo needed.
                     -->
                     <div class="post-cover">
-                        <img src="../../photos/GroupPhoto.jpg" alt="Science Fair Cover Photo" class="post-cover-img">
+                        <img src="../../../photos/GroupPhoto.jpg" alt="Science Fair Cover Photo" class="post-cover-img">
                         <!-- ?? Optional caption -->
                         <p class="post-cover-caption">Students presenting their projects at the Science Fair</p>
                     </div>
@@ -79,7 +79,7 @@ include __DIR__ . '/../../components/navbar.php';
                         <!-- -- INLINE PHOTO (optional) ---------------- -->
                         <!--
                         <figure class="post-figure">
-                            <img src="../../photos/YOUR-PHOTO.jpg" alt="Photo description" class="post-figure-img">
+                            <img src="../../../photos/YOUR-PHOTO.jpg" alt="Photo description" class="post-figure-img">
                             <figcaption>Caption (optional)</figcaption>
                         </figure>
                         -->
@@ -99,21 +99,21 @@ include __DIR__ . '/../../components/navbar.php';
                         <div class="post-gallery">
                             <div class="post-gallery-item">
                                 <!-- ?? Replace src with your photo path -->
-                                <img src="../../photos/GroupPhoto.jpg" alt="Science Fair Photo 1"
+                                <img src="../../../photos/GroupPhoto.jpg" alt="Science Fair Photo 1"
                                      data-bs-toggle="modal" data-bs-target="#lightboxModal"
-                                     data-img-src="../../photos/GroupPhoto.jpg"
+                                     data-img-src="../../../photos/GroupPhoto.jpg"
                                      data-img-caption="Science Fair  |  Group Photo">
                             </div>
                             <div class="post-gallery-item">
-                                <img src="../../photos/AHS Photo.jpg" alt="Science Fair Photo 2"
+                                <img src="../../../photos/AHS Photo.jpg" alt="Science Fair Photo 2"
                                      data-bs-toggle="modal" data-bs-target="#lightboxModal"
-                                     data-img-src="../../photos/AHS Photo.jpg"
+                                     data-img-src="../../../photos/AHS Photo.jpg"
                                      data-img-caption="Science Fair  |  Project Display">
                             </div>
                             <div class="post-gallery-item">
-                                <img src="../../photos/SaraswatiPuja2026.jpg" alt="Science Fair Photo 3"
+                                <img src="../../../photos/SaraswatiPuja2026.jpg" alt="Science Fair Photo 3"
                                      data-bs-toggle="modal" data-bs-target="#lightboxModal"
-                                     data-img-src="../../photos/SaraswatiPuja2026.jpg"
+                                     data-img-src="../../../photos/SaraswatiPuja2026.jpg"
                                      data-img-caption="Science Fair  |  Award Ceremony">
                             </div>
                             <!-- Copy a <div class="post-gallery-item"> above to add more photos -->
@@ -163,7 +163,7 @@ include __DIR__ . '/../../components/navbar.php';
 
                     <!-- Back button -->
                     <div class="post-back">
-                        <a href="../ActivityAndNews.php" class="post-back-btn">&larr; Back to Activities &amp; News</a>
+                        <a href="../../ActivityAndNews.php" class="post-back-btn">&larr; Back to Activities &amp; News</a>
                     </div>
 
                 </div>
@@ -174,11 +174,11 @@ include __DIR__ . '/../../components/navbar.php';
     <!-- Back to Top -->
     <a href="#" class="back-to-top" aria-label="Back to top">&#8679;</a>
 
-    <?php include __DIR__ . '/../../components/footer.php'; ?>
+    <?php include __DIR__ . '/../../../components/footer.php'; ?>
 
-    <script src="../../libs/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="../../js/search.js"></script>
-    <script src="../../js/main.js"></script>
-    <script src="../js/lightbox.js"></script>
+    <script src="../../../libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../../../js/search.js"></script>
+    <script src="../../../js/main.js"></script>
+    <script src="../../js/lightbox.js"></script>
 </body>
 </html>

@@ -55,12 +55,12 @@ include __DIR__ . '/../components/navbar.php';
                      1. Copy any <article class="notice-card"> block below.
                      2. Paste it at the TOP of this list (newest first).
                      3. Update: data-type, badge, title, date, excerpt text.
-                     4. Set href on "Read More" to the correct template file:
-                          Notice   ? templates/notice-template.html
-                          Activity ? templates/activity-template.html
-                          News     ? templates/news-template.html
-                          Exam     ? templates/exam-template.html
-                        (copy the template, rename it, then link to the copy)
+                     4. Set href on "Read More" to the category notice file:
+                          Notice   -> Notices/notice/notice-template.php
+                          Activity -> Notices/activity/activity-template.php
+                          News     -> Notices/news/news-template.php
+                          Exam     -> Notices/exam/exam-template.php
+                        (copy the template into the category folder, rename it, then link to the copy)
                 ----------------------------------------------------------- -->
 
                 <!-- ── SAMPLE NOTICE 1 ── -->
@@ -76,7 +76,7 @@ include __DIR__ . '/../components/navbar.php';
                             The official examination timetable for the Annual Examination 2026 (Classes 6 to 9) has been published. Exams will commence on <strong>19th November 2026</strong> (Thursday) at <strong>10:00 AM daily</strong>.
                         </p>
                         <div class="notice-actions">
-                            <a href="templates/annual-exam-schedule-2026.php" class="notice-read-more">Read More</a>
+                            <a href="Notices/exam/annual-exam-schedule-2026.php" class="notice-read-more">Read More</a>
                         </div>
                     </div>
                 </article>
@@ -93,7 +93,7 @@ include __DIR__ . '/../components/navbar.php';
                             Kapotaksha High School is participating in the District Inter-School Science Fair on <strong>15th August 2026</strong>. Students from classes 8 | 10 may register by submitting a project proposal before <strong>30th July 2026</strong>.
                         </p>
                         <div class="notice-actions">
-                            <a href="templates/activity-template.php" class="notice-read-more">Read More</a>
+                            <a href="Notices/activity/science-fair-2026.php" class="notice-read-more">Read More</a>
                         </div>
                     </div>
                 </article>
@@ -110,7 +110,7 @@ include __DIR__ . '/../components/navbar.php';
                             We are proud to announce a <strong>98% pass rate</strong> in the SSC Examination 2026, with <strong>42 students securing GPA 5.0</strong>. The school management congratulates all successful students.
                         </p>
                         <div class="notice-actions">
-                            <a href="templates/news-template.php" class="notice-read-more">Read More</a>
+                            <a href="Notices/news/ssc-result-2026.php" class="notice-read-more">Read More</a>
                         </div>
                     </div>
                 </article>
@@ -127,7 +127,7 @@ include __DIR__ . '/../components/navbar.php';
                             Results of the Half-Yearly Examination 2026 have been published. Students may collect mark sheets from <strong>8th July 2026</strong>. Parent | Teacher Meeting: <strong>12th July at 10:00 AM</strong>.
                         </p>
                         <div class="notice-actions">
-                            <a href="templates/exam-template.php" class="notice-read-more">Read More</a>
+                            <a href="Notices/exam/half-yearly-results-2026.php" class="notice-read-more">Read More</a>
                         </div>
                     </div>
                 </article>
@@ -144,7 +144,7 @@ include __DIR__ . '/../components/navbar.php';
                             The Annual Sports Day will be held on <strong>20th September 2026</strong>. Students interested in athletic events must register with their Physical Education teacher by <strong>10th September 2026</strong>.
                         </p>
                         <div class="notice-actions">
-                            <a href="templates/activity-template.php" class="notice-read-more">Read More</a>
+                            <a href="Notices/activity/annual-sports-day-2026.php" class="notice-read-more">Read More</a>
                         </div>
                     </div>
                 </article>
@@ -161,7 +161,7 @@ include __DIR__ . '/../components/navbar.php';
                             All students are reminded to clear their fees for July 2026 by <strong>15th July 2026</strong>. Late payment will attract a fine as per school policy. Queries: school accounts office 9 AM  |  2 PM.
                         </p>
                         <div class="notice-actions">
-                            <a href="templates/notice-template.php" class="notice-read-more">Read More</a>
+                            <a href="Notices/notice/fee-payment-reminder-july-2026.php" class="notice-read-more">Read More</a>
                         </div>
                     </div>
                 </article>

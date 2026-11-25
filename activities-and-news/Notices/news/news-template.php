@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News  |  Kapotaksha High School</title>
-    <link href="../../libs/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/base.css">
-    <link rel="stylesheet" href="../../css/navbar.css">
-    <link rel="stylesheet" href="../../css/footer.css">
-    <link rel="stylesheet" href="../css/post.css">
-    <link rel="icon" href="../../photos/KHS.png" type="image/png">
+    <link href="../../../libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/base.css">
+    <link rel="stylesheet" href="../../../css/navbar.css">
+    <link rel="stylesheet" href="../../../css/footer.css">
+    <link rel="stylesheet" href="../../css/post.css">
+    <link rel="icon" href="../../../photos/KHS.png" type="image/png">
 </head>
 <body>
 
@@ -17,7 +17,7 @@
     <!-- Navigation Bar -->
     <?php
 $root = '../../';
-include __DIR__ . '/../../components/navbar.php';
+include __DIR__ . '/../../../components/navbar.php';
 ?>
 
     <!-- --- POST WRAPPER ------------------------------------------------ -->
@@ -27,8 +27,8 @@ include __DIR__ . '/../../components/navbar.php';
             <!-- Breadcrumb -->
             <nav aria-label="breadcrumb" class="post-breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="../ActivityAndNews.php">Activities &amp; News</a></li>
+                    <li class="breadcrumb-item"><a href="../../../index.php">Home</a></li>
+                    <li class="breadcrumb-item"><a href="../../ActivityAndNews.php">Activities &amp; News</a></li>
                     <li class="breadcrumb-item active" aria-current="page">News</li>
                 </ol>
             </nav>
@@ -55,7 +55,7 @@ include __DIR__ . '/../../components/navbar.php';
                         Remove this block if no cover photo.
                     -->
                     <div class="post-cover">
-                        <img src="../../photos/AHS Photo.jpg" alt="SSC Result Celebration" class="post-cover-img">
+                        <img src="../../../photos/AHS Photo.jpg" alt="SSC Result Celebration" class="post-cover-img">
                         <p class="post-cover-caption">Teachers and students celebrating the SSC result</p>
                     </div>
 
@@ -96,7 +96,7 @@ include __DIR__ . '/../../components/navbar.php';
                         <!-- -- INLINE PHOTO (optional) ---------------- -->
                         <!--
                         <figure class="post-figure">
-                            <img src="../../photos/YOUR-PHOTO.jpg" alt="Caption" class="post-figure-img">
+                            <img src="../../../photos/YOUR-PHOTO.jpg" alt="Caption" class="post-figure-img">
                             <figcaption>Caption (optional)</figcaption>
                         </figure>
                         -->
@@ -109,15 +109,15 @@ include __DIR__ . '/../../components/navbar.php';
                         <h3 class="post-gallery-heading">Photo Gallery</h3>
                         <div class="post-gallery">
                             <div class="post-gallery-item">
-                                <img src="../../photos/PHOTO1.jpg" alt="Photo 1"
+                                <img src="../../../photos/PHOTO1.jpg" alt="Photo 1"
                                      data-bs-toggle="modal" data-bs-target="#lightboxModal"
-                                     data-img-src="../../photos/PHOTO1.jpg"
+                                     data-img-src="../../../photos/PHOTO1.jpg"
                                      data-img-caption="Caption 1">
                             </div>
                             <div class="post-gallery-item">
-                                <img src="../../photos/PHOTO2.jpg" alt="Photo 2"
+                                <img src="../../../photos/PHOTO2.jpg" alt="Photo 2"
                                      data-bs-toggle="modal" data-bs-target="#lightboxModal"
-                                     data-img-src="../../photos/PHOTO2.jpg"
+                                     data-img-src="../../../photos/PHOTO2.jpg"
                                      data-img-caption="Caption 2">
                             </div>
                         </div>
@@ -169,7 +169,7 @@ include __DIR__ . '/../../components/navbar.php';
 
                     <!-- Back button -->
                     <div class="post-back">
-                        <a href="../ActivityAndNews.php" class="post-back-btn">&larr; Back to Activities &amp; News</a>
+                        <a href="../../ActivityAndNews.php" class="post-back-btn">&larr; Back to Activities &amp; News</a>
                     </div>
 
                 </div>
@@ -180,11 +180,11 @@ include __DIR__ . '/../../components/navbar.php';
     <!-- Back to Top -->
     <a href="#" class="back-to-top" aria-label="Back to top">&#8679;</a>
 
-    <?php include __DIR__ . '/../../components/footer.php'; ?>
+    <?php include __DIR__ . '/../../../components/footer.php'; ?>
 
-    <script src="../../libs/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="../../js/search.js"></script>
-    <script src="../../js/main.js"></script>
-    <script src="../js/lightbox.js"></script>
+    <script src="../../../libs/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../../../js/search.js"></script>
+    <script src="../../../js/main.js"></script>
+    <script src="../../js/lightbox.js"></script>
 </body>
 </html>
