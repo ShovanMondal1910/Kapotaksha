@@ -40,7 +40,7 @@ function updateNoticeVisibility() {
     // Handle "Show More" button visibility
     if (loadMoreWrap) {
         if (matchingCards.length > currentLimit) {
-            loadMoreWrap.style.display = 'block';
+            loadMoreWrap.style.display = 'flex';
         } else {
             loadMoreWrap.style.display = 'none';
         }

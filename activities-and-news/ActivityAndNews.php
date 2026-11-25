@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="css/activity-news.css">
+    <link rel="stylesheet" href="css/activity-news.css?v=1.1">
     <link rel="icon" href="../photos/KHS.png" type="image/png">
 </head>
 <body>
@@ -169,8 +169,8 @@ include __DIR__ . '/../components/navbar.php';
             </div><!-- /#noticeList -->
 
             <!-- Show More Button -->
-            <div class="notice-load-more-wrap" id="noticeLoadMoreWrap" style="display: none;">
-                <button type="button" class="btn-show-more-notices" id="btnShowMoreNotices">
+            <div class="notice-load-more-wrap d-flex justify-content-center align-items-center w-100" id="noticeLoadMoreWrap" style="display: none; justify-content: center; align-items: center; width: 100%; max-width: 860px; margin: 32px auto 0; text-align: center;">
+                <button type="button" class="btn-show-more-notices" id="btnShowMoreNotices" style="margin: 0 auto;">
                     <span>Show More</span>
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                         <polyline points="6 9 12 15 18 9"></polyline>
@@ -194,7 +194,7 @@ include __DIR__ . '/../components/navbar.php';
 
     <script src="../libs/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="../js/main.js"></script>
-    <script src="js/activity-news.js"></script>
+    <script src="js/activity-news.js?v=1.1"></script>
     <script src="../js/search.js"></script>
 </body>
 </html>
