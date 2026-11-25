@@ -80,7 +80,7 @@ $root = $root ?? '';
                         Media
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="<?= $root ?>Media/Gallery.html">Gallery</a></li>
+                        <li><a class="dropdown-item" href="<?= $root ?>Media/Gallery.php">Gallery</a></li>
                     </ul>
                 </li>
 
