@@ -142,7 +142,7 @@ To embed the 3D viewer on any page, include the container and scripts:
 
 ### Recipe 7: How to Update Global Navigation & Footer in 1 Step
 Instead of editing 30+ separate HTML files, use the single source of truth component system:
-1. Edit [`components/navbar.html`](file:///c:/Users/Krishanu/OneDrive%20-%20American%20International%20University-Bangladesh/School/components/navbar.html) or [`components/footer.html`](file:///c:/Users/Krishanu/OneDrive%20-%20American%20International%20University-Bangladesh/School/components/footer.html).
+1. Edit [`components/navbar.php`](components/navbar.php) or [`components/footer.php`](components/footer.php).
 2. Use `{{ROOT}}` in front of any relative URL (e.g. `{{ROOT}}about/facilities.html`).
 3. Run the component synchronizer:
    ```bash

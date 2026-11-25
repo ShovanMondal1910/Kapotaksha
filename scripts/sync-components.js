@@ -2,8 +2,10 @@ const fs = require('fs');
 const path = require('path');
 
 const rootDir = path.resolve(__dirname, '..');
-const navbarTemplate = fs.readFileSync(path.join(rootDir, 'components', 'navbar.html'), 'utf8');
-const footerTemplate = fs.readFileSync(path.join(rootDir, 'components', 'footer.html'), 'utf8');
+const navbarFile = fs.existsSync(path.join(rootDir, 'components', 'navbar.php')) ? 'navbar.php' : 'navbar.html';
+const footerFile = fs.existsSync(path.join(rootDir, 'components', 'footer.php')) ? 'footer.php' : 'footer.html';
+const navbarTemplate = fs.readFileSync(path.join(rootDir, 'components', navbarFile), 'utf8');
+const footerTemplate = fs.readFileSync(path.join(rootDir, 'components', footerFile), 'utf8');
 
 function getAllHtmlFiles(dir, fileList = []) {
     const entries = fs.readdirSync(dir, { withFileTypes: true });
