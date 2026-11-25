@@ -2,6 +2,9 @@
 node_modules/
 vendor/
 
+# Build output
+dist/
+
 # Environment files
 .env
 .env.local
