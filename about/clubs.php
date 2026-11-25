@@ -172,44 +172,6 @@ include __DIR__ . '/../components/navbar.php';
         </div>
     </section>
 
-    <!-- Student Achievements & Hall of Fame -->
-    <section class="hall-of-fame-section">
-        <div class="container">
-            <h2 class="fame-title">Student Hall of Fame</h2>
-            <p class="fame-subtitle">Celebrating the stellar achievements of our students in regional and national co-curricular arenas.</p>
-
-            <div class="row g-4">
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="fame-card">
-                        <div class="fame-icon">🏆</div>
-                        <h3 class="fame-award-title">1st Place - Upazila Debate</h3>
-                        <p class="fame-award-event">Koyra Upazila Inter-School Debate (2025)</p>
-                        <p class="fame-award-desc">Awarded Champion Trophy for logical argumentation on "Education &amp; Technology in Coastal Development."</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="fame-card">
-                        <div class="fame-icon">🔬</div>
-                        <h3 class="fame-award-title">Best Science Innovation</h3>
-                        <p class="fame-award-event">Khulna Division Science Fair (2025)</p>
-                        <p class="fame-award-desc">Project "Coastal Saline Water Purification Model" secured 2nd runner-up among 42 secondary schools.</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="fame-card">
-                        <div class="fame-icon">⚽</div>
-                        <h3 class="fame-award-title">Zilla Football Runners-Up</h3>
-                        <p class="fame-award-event">District Inter-School Summer Tournament</p>
-                        <p class="fame-award-desc">KHS football team demonstrated exceptional teamwork and sportsmanship across five competitive match rounds.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
 
     <!-- Interactive Club Member Roster Modal -->
     <div class="roster-modal" id="memberRosterModal" role="dialog" aria-modal="true" aria-labelledby="modalRosterClubTitle">
