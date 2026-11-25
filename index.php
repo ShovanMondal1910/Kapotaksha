@@ -323,7 +323,7 @@
                 </div>
 
                 <div class="text-center mt-5">
-                    <a href="events/Events.html" class="events-btn">CHECK OUT MORE OF EVENTS</a>
+                    <a href="events/Events.php" class="events-btn">CHECK OUT MORE OF EVENTS</a>
                 </div>
             </div>
         </div>
@@ -352,7 +352,7 @@
                         <div class="event-list-body">
                             <h2 class="event-list-title">Clean School No Mosquito</h2>
                             <p class="event-list-excerpt">On 8 October 2026, Kapotaksha High School (KHS) successfully organized a Clean School No Mosquito program...</p>
-                            <a href="events/cleanSchoolNoMosquito.html" class="event-list-read-more">READ MORE</a>
+                            <a href="events/cleanSchoolNoMosquito.php" class="event-list-read-more">READ MORE</a>
                             <p class="event-list-date">October 08, 2026</p>
                         </div>
                     </article>

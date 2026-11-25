@@ -71,7 +71,7 @@ $root = $root ?? '';
 
                 <!-- Events -->
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= $root ?>events/Events.html">Events</a>
+                    <a class="nav-link" href="<?= $root ?>events/Events.php">Events</a>
                 </li>
 
                 <!-- Media Dropdown -->
