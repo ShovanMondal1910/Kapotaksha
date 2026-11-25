@@ -66,7 +66,7 @@ $root = $root ?? '';
 
                 <!-- Activities & News -->
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= $root ?>activities-and-news/ActivityAndNews.html">Activities &amp; News</a>
+                    <a class="nav-link" href="<?= $root ?>activities-and-news/ActivityAndNews.php">Activities &amp; News</a>
                 </li>
 
                 <!-- Events -->
