@@ -32,13 +32,13 @@ $root = $root ?? '';
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="<?= $root ?>index.php#leadership-messages">Leadership Messages</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="<?= $root ?>about/facilities.html">Campus &amp; Facilities</a></li>
+                        <li><a class="dropdown-item" href="<?= $root ?>about/facilities.php">Campus &amp; Facilities</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="<?= $root ?>about/clubs.html">Clubs &amp; Co-Curriculars</a></li>
+                        <li><a class="dropdown-item" href="<?= $root ?>about/clubs.php">Clubs &amp; Co-Curriculars</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="<?= $root ?>about/RulesRegulation.html">Rules &amp; Regulation</a></li>
+                        <li><a class="dropdown-item" href="<?= $root ?>about/RulesRegulation.php">Rules &amp; Regulation</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="<?= $root ?>about/IntimidationPolicy.html">Intimidation Policy</a></li>
+                        <li><a class="dropdown-item" href="<?= $root ?>about/IntimidationPolicy.php">Intimidation Policy</a></li>
                     </ul>
                 </li>
 

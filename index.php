@@ -23,7 +23,7 @@
 <body>
 
     <!-- Navigation Bar -->
-    <?php include 'components/navbar.php'; ?>
+    <?php include __DIR__ . '/components/navbar.php'; ?>
 
     <!-- Hero Slider / Carousel -->
     <header class="hero-slider-section">
@@ -621,7 +621,7 @@
     <a href="#" class="back-to-top" aria-label="Back to top">&#8679;</a>
 
     <!-- Contact / Footer -->
-    <?php include 'components/footer.php'; ?>
+    <?php include __DIR__ . '/components/footer.php'; ?>
 
     <script src="libs/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="js/i18n.js"></script>
